@@ -1,0 +1,15 @@
+<h2>
+<?php echo $mensaje;?>
+</h2>
+<table border="1">
+    <tr>
+        <th>Nombre</th>
+        <th>Precio</th>
+    </tr>
+    <?php  foreach ($articulos as $articulo) {?>
+    <tr>
+        <td><?php echo $articulo["nombre"]; ?></td>
+        <td><?php echo $articulo["Pvp"]; ?></td>
+    </tr>
+    <?php}?>
+</table>
